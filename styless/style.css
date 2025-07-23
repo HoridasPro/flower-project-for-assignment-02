@@ -1,0 +1,48 @@
+*,*::after*,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: "Lato", sans-serif;
+}
+/* container */
+.container{
+  max-width: 1150px;
+  margin: 0 auto;
+}
+/* display flex */
+.display{
+  display: flex;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul{
+  display: flex;
+  gap: 40px;
+}
+.navbar ul li{
+  list-style: none;
+}
+.navbar ul li a{
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+.nav_link{
+  color: #8987A1;
+}
+.active{
+  color: #252432;
+}
+.check_card{
+  color: #000000;
+  font-weight: 300;
+}
+.card_p{
+   color: #000000;
+  margin-left: -70px;
+}
+ 
