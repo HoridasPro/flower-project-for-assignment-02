@@ -58,7 +58,7 @@ body {
   font-size: 4rem;
   font-weight: 700;
   color: #000000;
-  font-family: "Lato", sans-serif;
+  font-family: "Noto Serif", serif;
 }
 .banner_span {
   font-size: 4rem;
@@ -76,44 +76,45 @@ body {
 }
 
 /* Our Plants Section */
-.our_plants_section_content {
-  text-align: center;
-  max-width: 65%;
-  margin: 0 auto;
-  margin-top: 78px;
+.our_plants_section {
+  margin-top: 100px;
 }
-.our_plants_section_content h1 {
+.our_plants_section h1 {
   font-size: 3.01rem;
   font-weight: 700;
   color: #000000;
   line-height: 5px;
-  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-family: "Noto Serif", serif;
 }
-.plants_span {
+.plants_span,
+.latest_deals_span {
   color: #e95a08;
 }
-.our_plants_section_content p {
+.our_plants_section p {
   font-size: 1.2rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto;
 }
-.cards_section{
+/* cards style */
+.cards_section {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  row-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   margin-top: 49px;
 }
-.card{
+.card {
   max-width: 270px;
   text-align: center;
 }
-/* cards style */
 .card h5 {
   font-size: 1.2rem;
   font-weight: 500;
   color: rgb(17, 17, 17);
   margin-top: 15px;
-  
 }
 .card h4 {
   font-size: 1.2rem;
@@ -121,20 +122,109 @@ body {
   color: rgb(17, 17, 17);
   margin-top: -25px;
 }
-.our_plants_button{
+.our_plants_button {
   font-weight: 600;
-  background-color: #E95A08;
+  background-color: #e95a08;
   color: #fff;
   padding: 10px 25px;
   border: none;
   width: 100%;
   margin-top: -10px;
   display: block;
+}
 
+/* plants lover style */
+.plants_lover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+}
+.plants_imas {
+  max-width: 50%;
+}
+.img {
+  max-width: 500px;
+}
+.budge {
+  max-width: 200px;
+  position: relative;
+  top: -265px;
+  left: -135px;
+}
+.plants_lover_content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-family: "Noto Serif", serif;
+  line-height: 60px;
+}
+.plants_lover_content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+.plants_lover_content ul li {
+  margin: 20px 0;
+}
+.plants_lover_content ul {
+  margin-top: -20px;
+}
+
+/* Latest Deals Style */
+.latest_deals {
+  text-align: center;
+  margin-top: 130px;
+}
+.latest_deals h1 {
+  font-size: 3.01rem;
+  font-weight: 700;
+  color: #000000;
+  font-family: "Noto Serif", serif;
+}
+.latest_deals p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: -30px;
+}
+
+/* zabo plant style */
+.zabo_plant{
+  display: flex;
+justify-content: space-between;
+  gap: 20px;
+}
+.zabo_plant_div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box{
+  background-color: #8987a1;
+  border-radius: 20px;
+}
+.box1{
+  background-image: url(../images/deal-bloom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 200px;
+}
+.box2{
+  background-image: url(../images/deal-ana.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 200px;
+}
+.box3{
+  background-image: url(../images/deal-zabo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 170px 350px;
 }
 
 /* Mobile device Responsive*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   /* For Navbar */
   .nav_link,
   .active {
@@ -151,10 +241,41 @@ body {
     max-width: 100%;
     margin-top: 0;
   }
-  .banner_p {
+
+  /* For our Plants */
+  .our_plants_section {
     max-width: 100%;
   }
-  .banner_h1 {
+  .cards_section {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    padding: 10px;
+  }
+  .our_plants_section p {
+    margin-right: -90px;
     max-width: 100%;
+  }
+  .our_plants_section h1 {
+    margin-right: -160px;
+  }
+
+  /* For plants lover */
+  .plants_lover_content {
+    order: 2;
+  }
+  .plants_lover {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .budge {
+    display: none;
+  }
+  .img {
+    max-width: 900px;
+    margin-right: -230px;
+    order: 1;
+  }
+  .plants_lover_content h1 {
+    margin: 20px;
   }
 }
