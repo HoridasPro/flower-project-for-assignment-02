@@ -208,20 +208,65 @@ justify-content: space-between;
   background-image: url(../images/deal-bloom.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 90px 200px;
+  background-color: #000000;
+  width: 450px;
+  height: 200px;
 }
 .box2{
   background-image: url(../images/deal-ana.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 90px 200px;
+  width: 450px;
+  height: 200px;
+  background-color: #000000;
 }
 .box3{
   background-image: url(../images/deal-zabo.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 170px 350px;
+  width: 100%;
 }
+.box1 p{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 70px;
+}
+.box1 a{
+  font-weight: 600;
+  color: #fff;
+  margin-left: 160px;
+  margin-top: -10px;
+}
+.box2 p{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 70px;
+}
+.box2 a{
+  font-weight: 600;
+  color: #fff;
+  margin-left: 190px;
+  margin-top: -10px;
+}
+.box3 h1{
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 150px;
+}
+.box3 a{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 270px;
+  margin-top: -10px;
+}
+
 
 /* Mobile device Responsive*/
 @media screen and (max-width: 576px) {
