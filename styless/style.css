@@ -483,6 +483,12 @@ body {
     height: 300px;
     margin: 20px 35px;
   }
+  .box1 a{
+    margin: 0 270px;
+  }
+  .box2 a{
+    margin: 0 270px;
+  }
   .zabo_plant {
     max-width: 100%;
     flex-direction: column;
